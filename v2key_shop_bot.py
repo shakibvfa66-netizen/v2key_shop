@@ -307,6 +307,9 @@ async def admin_ban_user(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(user_id, f"⚠️ حساب شما توسط ادمین مسدود شد.\nدلیل: {reason}")
     except:
         pass
+        
+async def start(update, context):
+    await update.message.reply_text("سلام! ربات با موفقیت اجرا شد ✅")
 
 # ثبت هندلرها و راه‌اندازی بات به مانند نمونه‌های قبلی
 
